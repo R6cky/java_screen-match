@@ -1,3 +1,5 @@
+package principal;
+
 import modelos.Filme;
 
 import java.util.ArrayList;
