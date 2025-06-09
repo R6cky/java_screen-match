@@ -2,6 +2,9 @@ package principal;
 
 import modelos.Filme;
 import modelos.Serie;
+import modelos.Titulo;
+
+import java.util.ArrayList;
 
 public class PrincipalComlistas {
     public static void main(String[] args) {
@@ -10,6 +13,22 @@ public class PrincipalComlistas {
         Filme movie3 = new Filme("Eu sou a lenda", 2022);
         Serie serie = new Serie("Lost", 2000);
 
+        ArrayList<Titulo> lista = new ArrayList<>();
+
+        lista.add(movie1);
+        lista.add(movie2);
+        lista.add(movie3);
+        lista.add(serie);
+
+        for (Titulo item: lista){
+            System.out.println(item.getNome());
+            Filme filme = (Filme) item ;
+            System.out.println(filme.getClassificacao())
+            ;
+            }
+
 
     }
+
+
 }
