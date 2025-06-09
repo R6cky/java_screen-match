@@ -5,6 +5,7 @@ import modelos.Serie;
 import modelos.Titulo;
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Comparator;
 
 public class PrincipalComlistas {
     public static void main(String[] args) {
@@ -39,7 +40,11 @@ public class PrincipalComlistas {
         System.out.println(listaString);
         Collections.sort(lista);
 
+        System.out.println("Ordenando por nome");
+        System.out.println(lista);
 
+        lista.sort(Comparator.comparing(Titulo::getAnoDeLancamento));
+        System.out.println("\nComparando por ano de lançamento");
         System.out.println(lista);
 
     }
