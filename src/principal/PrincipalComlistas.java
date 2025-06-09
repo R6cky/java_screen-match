@@ -5,6 +5,8 @@ import modelos.Serie;
 import modelos.Titulo;
 
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
 
 public class PrincipalComlistas {
     public static void main(String[] args) {
@@ -27,6 +29,16 @@ public class PrincipalComlistas {
             };
             }
 
+
+        //var listString = new ArrayList<>();
+        ArrayList<String> listaString = new ArrayList<>();
+        listaString.add("Paulo");
+        listaString.add("Rodrigo");
+        listaString.add("Edcarlos");
+        listaString.add("Antonio");
+
+        Collections.sort(listaString);
+        System.out.println(listaString);
 
 
 
