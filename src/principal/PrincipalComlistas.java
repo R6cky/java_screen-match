@@ -22,10 +22,14 @@ public class PrincipalComlistas {
 
         for (Titulo item: lista){
             System.out.println(item.getNome());
-            Filme filme = (Filme) item ;
-            System.out.println(filme.getClassificacao())
-            ;
+            if (item instanceof Filme filme && filme.getClassificacao() > 2){
+                System.out.println(filme.getClassificacao());
+            };
             }
+
+
+
+
 
 
     }
