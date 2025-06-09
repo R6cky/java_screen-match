@@ -3,9 +3,7 @@ package principal;
 import modelos.Filme;
 import modelos.Serie;
 import modelos.Titulo;
-
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.Collections;
 
 public class PrincipalComlistas {
@@ -39,10 +37,10 @@ public class PrincipalComlistas {
 
         Collections.sort(listaString);
         System.out.println(listaString);
+        Collections.sort(lista);
 
 
-
-
+        System.out.println(lista);
 
     }
 
