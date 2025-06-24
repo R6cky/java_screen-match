@@ -3,9 +3,8 @@ package principal;
 import modelos.Filme;
 import modelos.Serie;
 import modelos.Titulo;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
+
+import java.util.*;
 
 public class PrincipalComlistas {
     public static void main(String[] args) {
@@ -14,7 +13,7 @@ public class PrincipalComlistas {
         Filme movie3 = new Filme("Eu sou a lenda", 2022);
         Serie serie = new Serie("Lost", 2000);
 
-        ArrayList<Titulo> lista = new ArrayList<>();
+        List<Titulo> lista = new ArrayList<>();
 
         lista.add(movie1);
         lista.add(movie2);
